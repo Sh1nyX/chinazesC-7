@@ -18,7 +18,7 @@ namespace ConsoleApp7
 
 			set
 			{
-				if (Denominator == 0)
+				if (value == 0)
 					throw new ArgumentException("NULL DENOMINATOR"); 
 				_denominator = value;
 			}
@@ -93,6 +93,11 @@ namespace ConsoleApp7
 		public static bool operator!=(Fraction a, Fraction b)
 		{
 			return !(a == b);
+		}
+
+		public override string ToString()
+		{
+			return $"{Nominator}/{Denominator}";
 		}
 
 

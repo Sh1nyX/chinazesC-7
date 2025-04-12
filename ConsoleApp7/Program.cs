@@ -27,9 +27,9 @@
 			f.Nominator = 18;
 			f.Denominator = 24;
 
-			Console.WriteLine($"До Reduce: {f}"); 
+			Console.WriteLine($"До Скорочення: {f}"); 
 			f.Simplify();
-			Console.WriteLine($"Після Reduce: {f}"); 
+			Console.WriteLine($"Після Скорочення: {f}"); 
 		}
 	}
 }
